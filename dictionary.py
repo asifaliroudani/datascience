@@ -8,6 +8,7 @@ Price_dict = {}
 for row in AppleData[1:]:
     if row[4] in Price_dict:
         Price_dict[row[4]] += 1
+        print()
     else:
         Price_dict[row[4]] = 1
 print(Price_dict)
