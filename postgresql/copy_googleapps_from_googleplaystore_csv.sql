@@ -1,0 +1,1 @@
+COPY googleapps FROM '/home/asif/Documents/datascience/googleplaystore.csv' HEADER CSV
