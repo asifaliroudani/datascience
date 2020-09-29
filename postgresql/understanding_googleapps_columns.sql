@@ -138,3 +138,43 @@ FROM googleapps
 GROUP BY app
 HAVING COUNT(*) > 1
 
+SELECT	app, category, COUNT(*)
+FROM googleapps
+GROUP BY app, category
+HAVING COUNT(*) > 1
+
+SELECT	app, COUNT(*)
+FROM googleapps
+GROUP BY app
+HAVING COUNT(*) > 1
+ORDER BY app
+
+SELECT	app, category, COUNT(*)
+FROM googleapps
+GROUP BY app, category
+HAVING COUNT(*) > 1
+ORDER BY app, category
+
+
+SELECT	app, category, COUNT(*)
+FROM googleapps
+GROUP BY app, category
+HAVING COUNT(*) > 1
+ORDER BY 3
+
+SELECT	app, category, COUNT(*) CNT
+FROM googleapps
+GROUP BY app, category
+HAVING COUNT(*) > 1
+ORDER BY CNT
+
+SELECT	app, category, COUNT(*) CNT
+FROM googleapps
+GROUP BY app, category
+HAVING COUNT(*) > 1
+ORDER BY CNT DESC
+
+SELECT *
+FROM googleapps
+WHERE app = '8 Ball Pool'
+
